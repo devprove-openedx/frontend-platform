@@ -139,7 +139,7 @@ export function findSupportedLocale(locale) {
     return getPrimaryLanguageSubtag(locale);
   }
 
-  return 'en';
+  return 'uk';
 }
 
 /**
@@ -170,7 +170,9 @@ export function getLocale(locale) {
   // Note that some browers prefer upper case for the region part of the locale, while others don't.
   // Thus the toLowerCase, for consistency.
   // https://developer.mozilla.org/en-US/docs/Web/API/NavigatorLanguage/language
-  return findSupportedLocale(globalThis.navigator.language.toLowerCase());
+  //return findSupportedLocale(globalThis.navigator.language.toLowerCase());
+
+  return 'uk';
 }
 
 /**
