@@ -139,6 +139,10 @@ export function findSupportedLocale(locale) {
     return getPrimaryLanguageSubtag(locale);
   }
 
+  if (locale == 'en') {
+    return 'en';
+  }
+
   return 'uk';
 }
 
